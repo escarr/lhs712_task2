@@ -1,6 +1,6 @@
 # lhs712_task2
 
-This repository contains our final report and each of our individual code files for SMM4H Task 2: Automatic Classification of Adverse Events. Details are included below for how to run each of our code files (e.g., packages required, location of data files). Please reach out to us if any additional questions arise!
+This repository contains our final report and each of our individual code files for SMM4H Task 2: Automatic Classification of Adverse Events. Details are included below on how to run each of our code files (e.g., packages required, location of data files). Please reach out to us if any additional questions arise!
 
 
 Emmi Carr:
@@ -35,3 +35,33 @@ Tasha Torchon:
 
 
 Angel Ka Yan Chu:
+
+Getting Started:
+
+-R version 3.6.2 was being used throughout the analysis. File paths should be updated and use setwd to specify the path to the desired folder and to change the working directory.
+
+Prerequisites and Installing:
+
+-A list of required packages are listed in the beginning of the R code. Some essential ones for model building are: quanteda, e1071, caret, and modelr. For the purpose of visualization, one would install ggplot2 and wordcloud2. Install dplyr, tidytext, and tokenizer for data cleaning steps. 
+-The code can be broken down into six major sections: 
+
+(1) Basic cleaning, pre-processing and filtering
+
+(2) Sentimental analysis with lexicon bing and visualization
+
+(3) SVM model training
+
+(4) Model evaluation for SVM model
+
+(5) Random Forest training
+
+(6) Model evaluation for Random Forest
+
+Running the models:
+
+-Depending on how many features and/or texts there are in the training dataset, the SVM model might take approximately 20 minutes. The Random Forest model takes more time to train, about 30 minutes. 
+
+Running the metrics:
+
+-Functions that are used to compute accuracy, precision, recall, F1-score, and confusion matrix are included. 
+
